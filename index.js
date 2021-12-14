@@ -10,7 +10,6 @@ window.addEventListener("resize", function (event) {
   rect = card.getBoundingClientRect();
   centerX = rect.left + rect.width / 2;
   centerY = rect.top + rect.height / 2;
-  console.log(centerX, centerY);
 })
 
 function rotate(cursorPosition, centerPosition, threshold = 20) {
