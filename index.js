@@ -29,16 +29,16 @@ card.addEventListener("mousemove", function (event) {
   card.style.transform = `perspective(1000px)
   rotateY(${rotate(event.x, centerX)}deg)
   rotateX(${-rotate(event.y, centerY)}deg)`;
-  card.style.width = `120px`;
-  card.style.height = `160px`;
+  card.style.width = `160px`;
+  card.style.height = `213.3px`;
   card.style.filter = `brightness(${brightness(event.y, centerY)})`;
-  card.style.boxShadow = `${-rotate(event.x, centerX)}px ${-rotate(event.y, centerY)}px 100px 0px #000000`;
+  card.style.boxShadow = `${-rotate(event.x, centerX)}px ${-rotate(event.y, centerY)}px 80px 0px rgba(48, 65, 0, 0.5)`;
 })
 
 card.addEventListener("mouseleave", function (event) {
   card.style.transform = `perspective(500px)`;
-  card.style.width = `90px`;
-  card.style.height = `120px`;
+  card.style.width = `120px`;
+  card.style.height = `160px`;
   card.style.filter = `brightness(1)`;
-  card.style.boxShadow = `0 0 0 0 #000000`;
+  card.style.boxShadow = `0 0 0 0 rgba(48, 65, 0, 0.5)`;
 })

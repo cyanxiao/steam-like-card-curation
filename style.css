@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: rgb(95, 95, 95);
+  background-color: #F0F1F4;
   overflow: hidden;
 }
 
@@ -13,13 +13,14 @@ html, body {
 }
 
 #card {
-  width: 90px;
-  height: 120px;
+  width: 120px;
+  height: 160px;
   border-radius: 5px;
   transition: .2s;
   transform: perspective(1000px);
   filter: brightness(1);
   background-image: url("pic.jpg");
-  background-size: 100%;
-  box-shadow: 0 0 0 0 #000000;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 0 rgba(48, 65, 0, 0.5);
 }
