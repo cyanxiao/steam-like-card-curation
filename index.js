@@ -26,14 +26,13 @@ function brightness(cursorPositionY, centerPositionY, strength = 50) {
 }
 
 card.addEventListener("mousemove", function (event) {
-  console.log(`brightness(${1 - rotate(event.y, centerY)/100})`);
   card.style.transform = `perspective(1000px)
   rotateY(${rotate(event.x, centerX)}deg)
   rotateX(${-rotate(event.y, centerY)}deg)`;
   card.style.width = `120px`;
   card.style.height = `160px`;
   card.style.filter = `brightness(${brightness(event.y, centerY)})`;
-  // maskStyle.background = `linear-gradient(${lightingDirection(event.x, centerX, event.y, centerY)}deg, #ffffff, #000000)`;
+  card.style.boxShadow = `${-rotate(event.x, centerX)}px ${-rotate(event.y, centerY)}px 100px 0px #000000`;
 })
 
 card.addEventListener("mouseleave", function (event) {
@@ -41,4 +40,5 @@ card.addEventListener("mouseleave", function (event) {
   card.style.width = `90px`;
   card.style.height = `120px`;
   card.style.filter = `brightness(1)`;
+  card.style.boxShadow = `0 0 0 0 #000000`;
 })

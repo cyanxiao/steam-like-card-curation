@@ -21,4 +21,5 @@ html, body {
   filter: brightness(1);
   background-image: url("pic.jpg");
   background-size: 100%;
+  box-shadow: 0 0 0 0 #000000;
 }
